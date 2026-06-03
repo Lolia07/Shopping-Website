@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-body {
+    padding: 10px;
+}
+.star-shopping-font {
+    font-size: larger;
+}
+.links-left {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 0px;
+}
+.home-link {
+  padding: 0 5px;
+  color: rgb(95, 94, 94);
+  text-decoration: none;
+}
+.home-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+.arrow {
+  padding-left: 19px;
+  color: rgb(95, 94, 94);
+}
+.cart-link {
+  color: black;
+  text-decoration: none;
+  padding: 0 30px;
+}
+.cart-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+.your-cart-text {
+    font-size: larger;
+    padding: 0px 0px 10px 0px;
+}
+.left-and-right-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(240, 238, 238);
+    padding-top: 20px;
+}
+.left-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 10px 20px 50px;
+    width: 50%;
+}
+.item {
+    display: none;
+    border: 1px solid rgb(199, 197, 197);    
+    border-radius: 13px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.img {
+    height: 150px;
+    border-radius: 8px;
+}
+.right-side-item {
+    padding-left: 60px;
+}
+.text-and-delete {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: end;
+    gap: 10px;
+    padding: 0px 0px 5px 0px;
+    font-size: larger;
+    justify-content: space-between;
+}
+.delete-button {
+    background-color: rgb(240, 238, 238);
+    border: none;
+    align-items: end;
+}
+.delete-button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 177, 177);
+    border-radius: 5px;
+}
+.delete {
+    height: 20px;
+    align-items: flex-end;
+}
+.size-div {
+    padding: 5px 0px;
+}
+.color-div {
+    padding: 5px 0px;
+}
+.price-div {
+    padding-top: 5px;
+}
+.price {
+    font-size: larger;
+    padding-right: 60px;
+}
+.quantity-div {
+    align-items: flex-end;
+    background-color: rgb(202, 200, 200);
+    padding: 8px 15px 8px 15px;
+    border-radius: 13px;
+    gap: 20px;
+}
+.negative {
+    padding: 0px 5px;
+    border: none;
+    background-color: rgb(202, 200, 200);
+    font-size: larger;
+}
+.negative:hover {
+    cursor: pointer;
+    color: red;
+}
+.number {
+    padding: 0px 5px;
+    font-size: larger;
+}
+.positive {
+    padding: 0px 5px;border: none;
+    background-color: rgb(202, 200, 200);
+    font-size: larger;
+}
+.positive:hover {
+    cursor: pointer;
+    color: red;
+}
+.right-page {
+    padding: 10px 40px;
+    border: 1px solid rgb(199, 197, 197);
+    border-radius: 12px;
+    height: 240px;
+    width: 35%;
+    position: fixed;
+
+    right: 0;
+}
+.right-page:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+.order-summary {
+    padding: 12px 0px;
+    font-size: larger;
+}
+.subtotal-div {
+    padding: 5px 0px;
+}
+.subtotal-text {
+    font-size: larger;
+}
+.dollar {
+    font-size: larger;
+}
+.actual-subtotal {
+    font-size: larger;
+}
+.discount-div {
+    padding: 0px 5px 0px 0px;
+}
+.discount-text {
+    font-size: larger;
+}
+.actual-discount {
+    font-size: larger;
+}
+.delivery-div {
+    padding: 5px 5px 0px 0px;
+}
+.delivery-text {
+    font-size: larger;
+}
+.actual-delivery {
+    font-size: larger;
+}
+.total-div {
+    padding: 5px 5px 10px 0px;
+}
+.total-text {
+    font-size: larger;
+}
+.actual-total {
+    font-size: larger;
+    color: red;
+}
+.checkout-div {
+    padding: 9px 0px 4px 0px;
+}
+.checkout-link {
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+    border-radius: 12px;
+    background-color: rgb(17, 19, 34);
+    color: white;
+}
+.checkout-link:hover {
+    color: red;
+    background-color: rgb(240, 238, 238);
+    border: 2px solid rgb(17, 19, 34);
+}
+
+/* =========================
+   LAPTOPS & SMALL DESKTOPS
+========================= */
+@media screen and (max-width: 1200px) {
+
+  .left-page {
+    width: 55%;
+    padding: 20px;
+  }
+
+  .right-page {
+    width: 38%;
+    padding: 20px;
+  }
+
+  .right-side-item {
+    padding-left: 25px;
+  }
+
+}
+
+/* =========================
+   TABLETS
+========================= */
+@media screen and (max-width: 768px) {
+
+  .links-left {
+    flex-wrap: wrap;
+  }
+
+  .left-and-right-page {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-page {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .right-page {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .img {
+    height: 120px;
+  }
+
+  .right-side-item {
+    padding-left: 20px;
+    width: 100%;
+  }
+
+  .price {
+    padding-right: 20px;
+  }
+
+}
+
+/* =========================
+   MOBILE PHONES
+========================= */
+@media screen and (max-width: 480px) {
+
+  .main-body {
+    padding: 5px;
+  }
+
+  .star-shopping-font {
+    font-size: 18px;
+  }
+
+  .links-left {
+    flex-wrap: wrap;
+    font-size: 14px;
+  }
+
+  .cart-link {
+    padding: 0 10px;
+  }
+
+  .your-cart-text {
+    font-size: 20px;
+  }
+
+  .left-page {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+  }
+
+  .right-side-item {
+    padding-left: 0;
+    width: 100%;
+    padding-top: 15px;
+  }
+
+  .text-and-delete {
+    font-size: 18px;
+    flex-wrap: wrap;
+  }
+
+  .size-div,
+  .color-div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .price-div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .price {
+    padding-right: 0;
+  }
+
+  .quantity-div {
+    display: inline-block;
+  }
+
+  .right-page {
+    position: static;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .order-summary,
+  .subtotal-text,
+  .discount-text,
+  .delivery-text,
+  .total-text,
+  .actual-total,
+  .actual-subtotal,
+  .actual-discount {
+    font-size: 18px;
+  }
+
+  .checkout-link {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+
+}
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+@media screen and (max-width: 320px) {
+
+  .your-cart-text {
+    font-size: 18px;
+  }
+
+  .text-and-delete {
+    font-size: 16px;
+  }
+
+  .img {
+    max-width: 140px;
+  }
+
+  .checkout-link {
+    font-size: 16px;
+  }
+
+}

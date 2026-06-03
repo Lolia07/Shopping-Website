@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order</title>
+    <link rel="stylesheet" href="../CSS pages/track.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top-line">
+            <h4 class="signup-text">
+                <span class="middle-section">
+                    Sign up and get 20% off your first order. <a href="./sign-up.html" class="signup-link">Sign up now.</a>
+                </span> 
+                <button class="close-button">
+                x
+                </button>
+            </h4>
+        </div>
+        <div class="star-shopping-line">
+            <span class="star-stopping"><h3 class="star-shopping-text"><a href="../index.html" class="shop-co-link">SHOP.CO</a></h3></span>
+            <span class="shop-dropdown">
+                    <label for="categories">
+                        <select id="categorySelect" onchange="filterCategory()">
+                         <option value="tops" class="tops-category" category = "tops"><a href="products.html">Tops</a></option>
+                        <option value="shoes" class="shoes-category" category = "shoes"><a href="products.html">Shoes</a></option>
+                        <option value="dresses" class="dresses-category"><a href="products.html">Dresses</a></option>
+                        <option value="jeans" class="jeans-category"><a href="products.html">Jeans</a></option>
+                        <option value="jewelry" class="jewelry-category"><a href="products.html">Jewelry</a></option>
+                        <option value="beach wear" class="beachwear-category"><a href="products.html">Beach wear</a></option>
+                        <option value="skirts" class="skirts-category"><a href="products.html">Skirts</a></option>
+                        <option value="perfumes" class="perfume-category"><a href="products.html">Perfumes</a></option>
+                        <option value="shirts" class="shirts-category"><a href="products.html">Shirts</a></option>
+                        </select>
+                    </label>
+                </span>
+                <span class="product-span"><a href="products.html" class="explore">Explore products</a></span>
+                <span class="new"><a href="products.html" class="new-link">New Arrivals</a></span>
+                <span class="brands"><a href="brands.html" class="brands-link">Brands</a></span>
+
+                <span class="right-top"><img src="../Images/search.svg" alt="" class="search-picture">
+                <input type="text" placeholder=" Search for products..." id="searchBar" class="searchbar">
+                </span>
+            <span class="two-links-top-right">
+                <a href="../HTML pages/cart.html"><img src="../Images/cart.svg" alt="" id="Cart" class="cart-img"></a>
+                <a href="profile.html"><img src="../Images/profile.svg" alt="" class="profile-img"></a>
+            </span>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <img src="../Images/hamburger-menu-svgrepo-com.svg" alt="" class="hamburger">
+        </button>
+
+    </header>
+    <main class="main">
+        <div>
+            <a href="../index.html" class="home-link">Home</a>
+            <span class="arrow"> > </span>
+            <a href="profile.html" class="profile-link">Profile</a>
+            <span class="arrow"> > </span>
+            <a href="track.html" class="track-link">Track Your Order</a>
+        </div>
+        <h2 class="track-text">Track Your Order</h2>
+
+        <!-- Input form -->
+        <div class="tracking-form">
+        <label for="orderID" class="orderID-text">Enter your Order ID:</label>
+        <input type="text" id="orderID" placeholder="e.g., 12345" class="orderID-input">
+        <button onclick="showTrackingResult()">Track Order</button>
+        </div>
+
+        <!-- Tracking result -->
+        <div class="tracking-result" id="trackingResult" style="display:none;">
+        <p><strong>Order ID:</strong> <span id="displayID"></span></p>
+
+        <div class="tracking-steps">
+            <div class="result1">Your order is a town away and should be expected in two days.</div>
+            <div class="result2">Your item was shipped one day ago. Expected to arrive in two weeks.</div>
+            <div class="result3">Your item was dropped on your front porch at 9am this morning!!</div>
+            <div class="result4">Your item is at the warehouse awaiting shipping.</div>
+            <div class="result5">Your order has been confirmed and is being processed at the warehouse.</div>
+            <div class="result6">Your order is expected to be delivered in the next seven days</div>
+        </div>
+        </div>
+        </div>
+        <script src="../JavaScript Pages/track.js"></script>
+    </main>
+</div>
+</body>
+</html>

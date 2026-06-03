@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Brands</title>
+    <link rel="stylesheet" href="../CSS pages/brands.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top-line">
+            <h4 class="signup-text">
+                <span class="middle-section">
+                    Sign up and get 20% off your first order. <a href="./sign-up.html" class="signup-link">Sign up now.</a>
+                </span> 
+                <button class="close-button">
+                x
+                </button>
+            </h4>
+        </div>
+        <div class="star-shopping-line">
+            <span class="star-stopping"><h3 class="star-shopping-text"><a href="../index.html" class="shop-co-link">SHOP.CO</a></h3></span>
+            <span class="shop-dropdown">
+                    <label for="categories">
+                        <select id="categorySelect" onchange="filterCategory()">
+                        <option value="all" class="shop">Shop</option>
+                        <option value="tops" class="tops-category" category = "tops"><a href="products.html">Tops</a></option>
+                        <option value="shoes" class="shoes-category" category = "shoes"><a href="products.html">Shoes</a></option>
+                        <option value="dresses" class="dresses-category"><a href="products.html">Dresses</a></option>
+                        <option value="jeans" class="jeans-category"><a href="products.html">Jeans</a></option>
+                        <option value="jewelry" class="jewelry-category"><a href="products.html">Jewelry</a></option>
+                        <option value="beach wear" class="beachwear-category"><a href="products.html">Beach wear</a></option>
+                        <option value="skirts" class="skirts-category"><a href="products.html">Skirts</a></option>
+                        <option value="perfumes" class="perfume-category"><a href="products.html">Perfumes</a></option>
+                        <option value="shirts" class="shirts-category"><a href="products.html">Shirts</a></option>
+                        </select>
+                    </label>
+                </span>
+                <span class="product-span"><a href="products.html" class="explore">Explore products</a></span>
+                <span class="new"><a href="products.html" class="new-link">New Arrivals</a></span>
+                <span class="brands"><a href="brands.html" class="brands-link">Brands</a></span>
+
+                <span class="right-top"><img src="../Images/search.svg" alt="" class="search-picture">
+                <input type="text" placeholder=" Search for products..." id="searchBar" class="searchbar">
+                </span>
+            <span class="two-links-top-right">
+                <a href="../HTML pages/cart.html"><img src="../Images/cart.svg" alt="" id="Cart" class="cart-img"></a>
+                <a href="profile.html"><img src="../Images/profile.svg" alt="" class="profile-img"></a>
+            </span>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <img src="../Images/hamburger-menu-svgrepo-com.svg" alt="" class="hamburger">
+        </button>
+    </header>
+
+    <main class="main">
+        <h2 class="our-brands">Our Brands</h2>
+        <p class="text">
+            Fashion is personal. It's how people express who they are, how they feel, and who they're becoming. At Star Shopping, the goal is simple. To help everyone find their own style, in their own way.
+
+            This platform was created out of a passion for education, fashion, beauty, and ambition. It reflects a journey of learning and growing while exploring different styles and understanding what makes each brand unique. In many ways, this space is still evolving, just like personal style itself.
+
+            We bring together a selection of brands that influence global fashion, from timeless luxury houses to everyday streetwear essentials. Each one represents something different: confidence, creativity, culture, and identity.
+
+            But more than anything, this is about discovery. The same way I'm still finding my own style, this platform exists to help others do the same without pressure, without limits, and with freedom to explore what feels right.
+
+            Star Shopping isn't just about what you wear.
+            It's about becoming who you are.
+        </p>
+
+        <div class="bottom-div">
+            <img src="../Images/versace-logo-1.svg" alt="" class="versace">
+            <img src="../Images/zara-logo-1.svg" alt="" class="zara">
+            <img src="../Images/gucci-logo-1.svg" alt="" class="gucci">
+            <img src="../Images/prada-logo-1.svg" alt="" class="prada">
+            <img src="../Images/calvin-klein-1.svg" alt="" class="calvin-klein">
+        </div>
+    </main>
+    <script src="../JavaScript Pages/brands.js"></script>
+</body>
+</html>

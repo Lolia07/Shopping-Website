@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valid Checkout</title>
+    <link rel="stylesheet" href="../CSS pages/aftercheckout.css">
+</head>
+<body class="main">
+    <div class="true-main">
+        <h1 class="main-text">You have successfully checked out!!!</h1>
+        <a href="../index.html" class="linkto-home"><img src="../Images/back-button.svg" alt="" class="back-img">Back to home</a>
+        <div class="order-id-div">
+          <h2 class="orderID-text">Your Order ID:</h2>
+          <p id="orderID"></p>
+        </div>
+    </div>
+    <div class="bottom-div">
+        <img src="../Images/versace-logo-1.svg" alt="" class="versace">
+        <img src="../Images/zara-logo-1.svg" alt="" class="zara">
+        <img src="../Images/gucci-logo-1.svg" alt="" class="gucci">
+        <img src="../Images/prada-logo-1.svg" alt="" class="prada">
+        <img src="../Images/calvin-klein-1.svg" alt="" class="calvin-klein">
+    </div>
+    <script>
+  // your 6 preset order IDs
+  const orderIDs = [
+    "482913",
+    "193847",
+    "760214",
+    "558921",
+    "904362",
+    "671508"
+  ];
+
+  // pick random one
+  const randomIndex = Math.floor(Math.random() * orderIDs.length);
+  const selectedID = orderIDs[randomIndex];
+
+  // display it on page load
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("orderID").textContent = selectedID;
+  });
+</script>
+</body>
+</html>
