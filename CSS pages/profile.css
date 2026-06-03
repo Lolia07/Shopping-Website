@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.top-line {
+  margin: 0;
+  background-color: rgb(35, 28, 43);
+  position: fixed;
+  width: 100%;
+}
+.signup-text {
+  color: white;
+  font-size: 15px;
+  display: flex;           /* enable flex layout */
+  align-items: center;     /* vertically center items */
+  justify-content: space-between; /* push items apart */
+  padding: 5px 20px;
+}
+.middle-section {
+  flex: 1;
+  text-align: center;
+}
+.signup-link {
+  color: white;
+}
+.signup-link:hover {
+  color: darkred;
+}
+.close-button {
+  flex-direction: column;
+  text-align: right;
+  text-decoration: none;
+  border-color: rgb(86, 47, 47);
+  cursor: pointer;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: black;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+}
+.close-button:hover {
+  color: red;
+}
+.after-line {
+  padding: 24px 25px;
+}
+.star-shopping-line { 
+  display: flex;
+  align-items: center;
+  padding: 50px 75px 0px;
+}
+.star-shopping {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+.star-shopping-text {
+font-weight: 1100;
+font-size: 40px;
+padding-right: 40px;
+}
+.shop-co-link {
+  text-decoration: none;
+  color: black;
+}
+.star-shopping-side2 {
+  justify-content: space-between;
+}
+.shop-dropdown {
+  padding: 0 15px;
+  outline: none;    
+}
+.categories {
+  outline: none;
+}
+.product-span {
+  padding: 0 15px 0 0;
+}
+.explore { 
+  text-decoration: none;
+  color: black;
+}
+.explore:hover {
+  color: red;
+}
+.new {
+  padding: 0 10px 0 0;
+}
+.new-link {
+  text-decoration: none;
+  color: black;
+}
+.new-link:hover {
+  color: red;
+  cursor: pointer;
+}
+.brands {
+  padding: 0 10px 0 0;
+  padding-right: 25px;
+}
+.brands:hover {
+  color: red;
+  cursor: pointer;
+}
+.right-top {
+  padding: 0 10px 0 0;border: 1px solid #ddd;          /* thin, light border */
+  padding: 5px;
+  padding-left: 5px;
+  background-color: rgb(240, 238, 238);
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+}
+.search-picture {
+  height: 15px;
+  width: 25px;
+  margin-right: 10px;
+  padding-left: 5px;
+}
+.searchbar {
+  width: 345px;
+  border-radius: 5px;
+  border: none;        /* thin, light border */
+  outline: none;
+  flex: 1;
+  padding: 5px;
+  padding-left: 2px;
+  background-color: rgb(240, 238, 238);
+}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.main {
+  background-color: rgb(240, 238, 238);
+  padding: 20px 25px;
+}
+.top-left {
+  padding: 50px 75px 0px;
+}
+.home-link {
+  padding: 0 5px;
+  color: rgb(71, 68, 68);
+  text-decoration: none;
+}
+.home-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+.arrow {
+  color: rgb(95, 94, 94);
+}
+.profile-link {
+  padding: 0 5px;
+  color: black;
+  text-decoration: none;
+}
+.profile-link:hover {
+  color: red;
+  text-decoration: underline;
+}
+.main-stuff {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px 75px;
+  justify-content: space-between;
+}
+.cart-span {
+  display: flex;
+  flex-direction: column;
+}
+.cart-link {
+  height: 30px;
+  text-decoration: none;
+}
+.cart-link-text {
+  text-decoration: none;
+  color: rgb(35, 28, 43);
+  font-size: 30px;
+}
+.track-span {
+  display: flex;
+  flex-direction: column;
+}
+.track-link {
+  text-decoration: none;
+  height: 30px;
+}
+.track-link-text {
+  text-decoration: none;
+  color: rgb(35, 28, 43);
+  font-size: 30px;
+}
+.bottom-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.versace {
+  height: 90px;
+  width: 90px;
+}
+.zara {
+  height: 60px;
+  width: 60px;
+}
+.gucci {
+  height: 80px;
+  width: 80px;
+}
+.prada {
+  height: 80px;
+  width: 80px;
+}
+.calvin-klein {
+  height: 90px;
+  width: 90px;
+}
+
+/* =========================
+   LAPTOPS
+========================= */
+@media screen and (max-width: 1200px) {
+
+  .star-shopping-line {
+    padding: 50px 30px 0;
+  }
+
+  .top-left {
+    padding: 40px 30px 0;
+  }
+
+  .main-stuff {
+    padding: 40px 30px;
+  }
+
+  .searchbar {
+    width: 250px;
+  }
+
+}
+
+/* =========================
+   TABLETS
+========================= */
+@media screen and (max-width: 768px) {
+
+  .signup-text {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .star-shopping-line {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 60px 20px 0;
+  }
+
+  .hamburger {
+    display: flex;
+    height: 30px;
+  }
+
+  .star-shopping {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .star-shopping-text {
+    font-size: 30px;
+    padding-right: 0;
+  }
+
+  .right-top {
+    width: 100%;
+  }
+
+  .searchbar {
+    width: 100%;
+  }
+
+  .top-left {
+    padding: 30px 20px 0;
+  }
+
+  .main-stuff {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .cart-link-text,
+  .track-link-text {
+    font-size: 24px;
+  }
+
+  .bottom-div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+}
+
+/* =========================
+   MOBILE PHONES
+========================= */
+@media screen and (max-width: 480px) {
+
+  .after-line {
+    padding: 20px 10px;
+  }
+
+  .signup-text {
+    font-size: 13px;
+  }
+
+  .close-button {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .star-shopping-line {
+    display: none;
+    padding: 60px 15px 0;
+  }
+
+  .hamburger {
+    display: flex;
+    height: 30px;
+  }
+
+  .star-shopping-text {
+    font-size: 24px;
+  }
+
+  .star-shopping {
+    flex-wrap: wrap;
+  }
+
+  .shop-dropdown,
+  .new,
+  .brands,
+  .product-span {
+    font-size: 14px;
+  }
+
+  .top-left {
+    padding: 20px 15px 0;
+    font-size: 14px;
+  }
+
+  .main-stuff {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 15px;
+    gap: 40px;
+  }
+
+  .cart-link-text,
+  .track-link-text {
+    font-size: 20px;
+  }
+
+  .cart-link,
+  .track-link {
+    height: auto;
+  }
+
+  .bottom-div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 20px;
+  }
+
+  .versace,
+  .calvin-klein {
+    width: 60px;
+    height: 60px;
+  }
+
+  .gucci,
+  .prada {
+    width: 50px;
+    height: 50px;
+  }
+
+  .zara {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+@media screen and (max-width: 320px) {
+
+  .star-shopping-line {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    height: 30px;
+  }
+
+  .star-shopping-text {
+    font-size: 20px;
+  }
+
+  .cart-link-text,
+  .track-link-text {
+    font-size: 18px;
+  }
+
+  .top-left {
+    font-size: 12px;
+  }
+
+}

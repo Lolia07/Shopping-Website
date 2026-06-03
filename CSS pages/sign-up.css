@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(240, 238, 238);
+  padding: 10px 30px;
+}
+.up-text {
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;  /* horizontal */
+    align-items: center;
+    font-size: 28px;
+}
+.home-link {
+    padding: 0 5px;
+    color: rgb(95, 94, 94);
+    text-decoration: none;
+}
+.home-link:hover {
+    color: red;
+    text-decoration: underline;
+}
+.arrow {
+    color: rgb(95, 94, 94);
+}
+.sign-up-link {
+    padding: 0 5px;
+    color: black;
+    text-decoration: none;
+}
+.sign-up-link:hover {
+    color: red;
+    text-decoration: underline;
+}
+.signup-text {
+    padding: 0 5px;
+    color: black;
+    text-decoration: none;
+}
+.form {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 18px;
+
+    width: 100%;
+    max-width: 400px;    /* limits size */
+    margin: 20px auto;
+}
+.first-name-text {
+    padding: 12px 20px 0px;
+    padding-bottom: 9px;
+}
+.first-name-input {
+    border: 1px solid rgb(88, 88, 88);
+    margin: 9px 18px;
+    width: 250px;
+}
+.middle-name-text {
+    padding: 12px 20px 0px;
+    padding-bottom: 9px;
+}
+.middle-name-input {
+    border: 1px solid rgb(88, 88, 88);
+    margin: 9px 18px;
+    width: 250px;
+}
+.last-name-text {
+    padding: 12px 20px 0px;
+    padding-bottom: 9px;
+}
+.last-name-input {
+    border: 1px solid rgb(88, 88, 88);
+    margin: 9px 18px;
+    width: 250px;
+}
+.email-text {
+    padding: 12px 20px 0px;
+    padding-bottom: 9px;
+}
+.email-input {
+    border: 1px solid rgb(88, 88, 88);
+    margin: 9px 18px;
+    width: 250px;
+}
+.number-text {
+    padding: 12px 20px 0px;
+    padding-bottom: 9px;
+}
+.number-input {
+    border: 1px solid rgb(88, 88, 88);
+    margin: 9px 18px;
+    width: 250px;
+}
+.street-text {
+    padding: 12px 20px 0px;
+    padding-bottom: 9px;
+}
+.street-input {
+    border: 1px solid rgb(88, 88, 88);
+    margin: 9px 18px;
+    width: 250px;
+}
+.box-text {
+    padding: 12px 20px 0px;
+    padding-bottom: 9px;
+}
+.box-input {
+    border: 1px solid rgb(88, 88, 88);
+    margin: 9px 18px;
+    width: 250px;
+}
+.city-text {
+    padding: 12px 20px 0px;
+    padding-bottom: 9px;
+}
+.city-input {
+    border: 1px solid rgb(88, 88, 88);
+    margin: 9px 18px;
+    width: 250px;
+}
+.state-text {
+    padding: 12px 20px 0px;
+    padding-bottom: 9px;
+}
+.state-input {
+    border: 1px solid rgb(88, 88, 88);
+    margin: 9px 18px;
+    width: 250px;
+}
+.country-text {
+    padding: 12px 20px 0px;
+    padding-bottom: 9px;
+}
+.country-input {
+    border: 1px solid rgb(88, 88, 88);
+    margin: 9px 18px;
+    width: 250px;
+}
+.zip-text {
+    padding: 12px 20px 0px;
+    padding-bottom: 9px;
+}
+.zip-input {
+    border: 1px solid rgb(88, 88, 88);
+    margin: 9px 18px;
+    width: 250px;
+}
+.error {
+    display: none;
+    color: red;
+    background-color: white;
+    padding-left: 20px;
+    width: 30%;
+}
+.after-error {
+    height: 20px;
+}
+.submit {
+    text-decoration: none;
+    color: black;
+    padding: 13px 25px;
+    border-radius: 12px;
+    background-color: rgb(17, 19, 34);
+    color: white;
+}
+.submit:hover {
+    color: red;
+    background-color: rgb(240, 238, 238);
+    border: 2px solid rgb(17, 19, 34);
+}
+.bottom-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.versace {
+  height: 120px;
+  width: 90px;
+}
+.zara {
+  height: 60px;
+  width: 60px;
+}
+.gucci {
+  height: 80px;
+  width: 80px;
+}
+.prada {
+  height: 80px;
+  width: 80px;
+}
+.calvin-klein {
+  height: 90px;
+  width: 90px;
+}
+
+/* =========================
+   TABLETS
+========================= */
+@media screen and (max-width: 768px) {
+
+  .up-text {
+    font-size: 22px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .form {
+    max-width: 100%;
+    margin: 15px auto;
+    padding: 15px;
+  }
+
+  .first-name-input,
+  .middle-name-input,
+  .last-name-input,
+  .email-input,
+  .number-input,
+  .street-input,
+  .box-input,
+  .city-input,
+  .state-input,
+  .country-input,
+  .zip-input {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .error {
+    width: 100%;
+  }
+
+  .bottom-div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+}
+
+/* =========================
+   MOBILE PHONES
+========================= */
+@media screen and (max-width: 480px) {
+
+  * {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .up-text {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+
+  .form {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .first-name-text,
+  .middle-name-text,
+  .last-name-text,
+  .email-text,
+  .number-text,
+  .street-text,
+  .box-text,
+  .city-text,
+  .state-text,
+  .country-text,
+  .zip-text {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .first-name-input,
+  .middle-name-input,
+  .last-name-input,
+  .email-input,
+  .number-input,
+  .street-input,
+  .box-input,
+  .city-input,
+  .state-input,
+  .country-input,
+  .zip-input {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .submit {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .bottom-div {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .versace,
+  .calvin-klein {
+    width: 60px;
+    height: 60px;
+  }
+
+  .gucci,
+  .prada {
+    width: 50px;
+    height: 50px;
+  }
+
+  .zara {
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+@media screen and (max-width: 320px) {
+
+  .up-text {
+    font-size: 16px;
+  }
+
+  .submit {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .first-name-text,
+  .middle-name-text,
+  .last-name-text,
+  .email-text,
+  .number-text,
+  .street-text,
+  .box-text,
+  .city-text,
+  .state-text,
+  .country-text,
+  .zip-text {
+    font-size: 13px;
+  }
+
+}

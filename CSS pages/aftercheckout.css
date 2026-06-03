@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+    background-color: rgb(240, 238, 238);
+}
+.true-main {
+    padding: 20px;
+}
+.main-text {
+    text-align: center;
+    padding: 15px 0;
+}
+.linkto-home {
+    text-decoration: none;
+    color: black;
+    padding: 12px 100px;
+    font: 70px;
+}
+.back-img {
+    height: 15px;
+}
+.order-id-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.orderID {
+  font-size: larger;
+}
+.bottom-div {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30vh;
+}
+.versace {
+  height: 90px;
+  width: 90px;
+}
+.zara {
+  height: 60px;
+  width: 60px;
+}
+.gucci {
+  height: 80px;
+  width: 80px;
+}
+.prada {
+  height: 80px;
+  width: 80px;
+}
+.calvin-klein {
+  height: 90px;
+  width: 90px;
+}
+
+/* =========================
+   TABLETS
+========================= */
+@media screen and (max-width: 768px) {
+
+  .true-main {
+    padding: 15px;
+  }
+
+  .main-text {
+    font-size: 28px;
+  }
+
+  .linkto-home {
+    padding: 12px 30px;
+    font-size: 18px;
+  }
+
+  .bottom-div {
+    height: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .versace,
+  .calvin-klein {
+    width: 75px;
+    height: 75px;
+  }
+
+  .gucci,
+  .prada {
+    width: 65px;
+    height: 65px;
+  }
+
+  .zara {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* =========================
+   MOBILE PHONES
+========================= */
+@media screen and (max-width: 480px) {
+
+  .true-main {
+    padding: 10px;
+  }
+
+  .main-text {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .linkto-home {
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .orderID {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .bottom-div {
+    position: static; /* prevents logos covering content */
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .versace,
+  .calvin-klein {
+    width: 60px;
+    height: 60px;
+  }
+
+  .gucci,
+  .prada {
+    width: 50px;
+    height: 50px;
+  }
+
+  .zara {
+    width: 40px;
+    height: 40px;
+  }
+
+  .back-img {
+    height: 12px;
+  }
+}
+
+/* =========================
+   VERY SMALL DEVICES
+========================= */
+@media screen and (max-width: 320px) {
+
+  .main-text {
+    font-size: 18px;
+  }
+
+  .linkto-home {
+    font-size: 14px;
+  }
+
+  .orderID {
+    font-size: 14px;
+  }
+
+  .bottom-div {
+    gap: 10px;
+  }
+}
