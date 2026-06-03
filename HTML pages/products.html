@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Products</title>
+    <link rel="stylesheet" href="../CSS pages/products.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top-line">
+            <h4 class="signup-text">
+                <span class="middle-section">
+                    Sign up and get 20% off your first order. <a href="./sign-up.html" class="signup-link">Sign up now.</a>
+                </span> 
+                <button class="close-button">
+                x
+                </button>
+            </h4>
+        </div>
+        <div class="star-shopping-line">
+            <span class="star-stopping"><h3 class="star-shopping-text"><a href="../HTML pages/home.html" class="shop-co-link">SHOP.CO</a></h3></span>
+            <span class="shop-dropdown">
+                    <label for="categories">
+                        <select id="categorySelect" onchange="filterCategory()">
+                        <option value="shop" class="shop">Shop</option>
+                        <option value="tops" class="option">Tops</option>
+                        <option value="shoes" class="shoes-category">Shoes</option>
+                        <option value="dresses" class="dresses-category">dresses</option>
+                        <option value="jeans" class="jeans-category">Jeans</option>
+                        <option value="jewelry" class="jewelry-category">Jewelry</option>
+                        <option value="beach wear" class="beachwear-category">Beach wear</option>
+                        <option value="skirt" class="skirts-category">Skirts</option>
+                        <option value="perfumes" class="perfume-category">Perfumes</option>
+                        <option value="shirt" class="shirts-category">Shirts</option>
+                        </select>
+                    </label>
+                </span>
+                <span class="product-span"><a href="products.html" class="explore">Explore products</a></span>
+                <span class="new"><a href="products.html" class="new-link">New Arrivals</a></span>
+                <span class="brands"><a href="brands.html" class="brands-link">Brands</a></span>
+
+                <span class="right-top"><img src="../Images/search.svg" alt="" class="search-picture">
+                <input type="text" placeholder=" Search for products..." id="searchBar" class="searchbar">
+                </span>
+            <span class="two-links-top-right">
+                <a href="../HTML pages/cart.html"><img src="../Images/cart.svg" alt="" id="Cart" class="cart-img"></a>
+                <a href="profile.html"><img src="../Images/profile.svg" alt="" class="profile-img"></a>
+            </span>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <img src="../Images/hamburger-menu-svgrepo-com.svg" alt="" class="hamburger">
+        </button>
+    </header>
+    <main class="main">
+        <div class="links-left">
+            <a href="home.html" class="home-link">Home</a>
+            <div class="arrow"> > </div>
+            <a href="products.html" class="products-link">Products</a>
+        </div>
+        <div class="main-body">
+            <div class="left-filters-section">
+                <span class="filter-first-line">
+                <span><h2 class="filter-text">Filters</h2></span>
+                <button class="image-container"><a href="products.html"><img src="../Images/filters.svg" alt="" class="filter-img"></a></button>
+            </span>
+            <button class="filter-spec-button">
+                <p class="tops-section">
+                <span class="tops-text">Tops</span>
+                <span class="arrow"> > </span>
+                </p>
+            </button>
+            <button class="filter-spec-button">
+                <p class="shoes-section">
+                <span class="shoes-text">Shoes</span>
+                <span class="arrow"> > </span>
+            </p>
+            </button>
+            <button class="filter-spec-button">
+                <p class="dresses-section">
+                <span class="dresses-text">Dresses</span>
+                <span class="arrow"> > </span>
+            </p>
+            </button>
+            <button class="filter-spec-button">
+                <p class="jeans-section">
+                <span class="jeans-text">Jeans</span>
+                <span class="arrow"> > </span>
+            </p>
+            </button>
+            <button class="filter-spec-button">
+                <p class="jewelry-section">
+                <span class="jewelry-text">Jewelry</span>
+                <span class="arrow"> > </span>
+            </p>
+            </button>
+            <button class="filter-spec-button">
+                <p class="perfumes-section">
+                <span class="perfumes-text">Perfumes</span>
+                <span class="arrow"> > </span>
+            </p>
+            </button>
+            <button class="filter-spec-button">
+                <p class="beachwear-section">
+                <span class="beachwear-text">Beach wear</span>
+                <span class="arrow"> > </span>
+            </p>
+            </button>
+            <button class="filter-spec-button">
+                <p class="babywear-section">
+                <span class="babywear-text">Baby wear</span>
+                <span class="arrow"> > </span>
+            </p>
+            </button>
+            <button class="filter-spec-button">
+                <p class="skirts-section">
+                <span class="skirts-text">Skirts</span>
+                <span class="arrow"> > </span>
+            </p>
+            </button>
+            <button class="filter-spec-button">
+                <p class="shirts-section">
+                <span class="shirts-text">Shirts</span>
+                <span class="arrow"> > </span>
+            </p>
+            </button>
+            </div>
+            <div class="products-section">
+            <div class="main-right">
+                <div data-category="shirt" class="item">
+                    <img src="../Images/striped-fashion-shirt.jpg" alt="" class="img">
+                    <p class="item-detail-text">Striped Fashion Shirt</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <span class="rating">4.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$145</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </div>
+                <div data-category="shirt" class="item">
+                    <img src="../Images/black-tee.jpg" alt="" class="img">
+                    <p class="item-detail-text">Plain T-Shirt</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <span class="rating">5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$180</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </div>
+                <div data-category="shirt" class="item">
+                    <img src="../Images/mockup tee.jpg" alt="" class="img">
+                    <p class="item-detail-text">Mockup T-Shirt</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">3.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$240</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </div>
+                <div data-category="jeans" class="item">
+                    <img src="../Images/high-waist skinny jeans.jpg" alt="" class="img">
+                    <p class="item-detail-text">High-waist skinny jeans</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <span class="rating">4.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$150</span>
+                        <button class="discount-button">-20%</button>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </div>
+                <div data-category="beachwear" class="item">
+                    <img src="https://res.cloudinary.com/dx8p7miis/image/upload/f_auto,q_auto/4-piece-set_ingeia" alt="" class="img">
+                    <p class="item-detail-text">Four piece summer set</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <span class="rating">4/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$45</span>
+                        <button class="discount-button">-20%</button>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </div>
+                <div data-category="jeans" class="item">
+                    <img src="../Images/baggy-jeans.jpg" alt="" class="img">
+                    <p class="item-detail-text">Baggy Jeans</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">3/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$210</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </div>
+                <span data-category="beachwear" class="item">
+                    <img src="../Images/calvin-klein-underwear.jpg" alt="" class="img">
+                    <p class="item-detail-text">Calvin Klein Underwear</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <span class="rating">5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$50</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <div data-category="baby wear" class="item">
+                <img src="../Images/baby-wear.jpg" alt="" class="img">
+                <p class="item-detail-text">Baby wear</p>
+                <span class="stars">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/half-star.svg" alt="" class="star">
+                    <img src="../Images/empty-star.svg" alt="" class="star">
+                    <span class="rating">3.5/5</span>
+                </span>
+                <span class="price-and-cart">
+                    <span class="price">$50</span>
+                    <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                </span>
+            </div>
+            <div data-category="skirts" class="item">
+                <img src="../Images/flowy-knee-skirt.jpg" alt="" class="img">
+                <p class="item-detail-text">Flowy knee skirt</p>
+                <span class="stars">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/empty-star.svg" alt="" class="star">
+                    <span class="rating">4/5</span>
+                </span>
+                <span class="price-and-cart">
+                    <span class="price">$60</span>
+                    <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                </span>
+            </div>
+            <div data-category="perfumes" class="item">
+                <img src="../Images/gucci-perfume1.jpg" alt="" class="img">
+                <p class="item-detail-text">GUCCI MEMOIRE D'UNE ODEUR Perfume</p>
+                <span class="stars">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <span class="rating">5/5</span>
+                </span>
+                <span class="price-and-cart">
+                    <span class="price">$100</span>
+                    <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                </span>
+            </div>
+            <div data-category="perfumes" class="item">
+                <img src="../Images/gucci-perfume2.jpg" alt="" class="img">
+                <p class="item-detail-text">Gucci Flora Gorgeous Gardenia Perfume</p>
+                <span class="stars">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <img src="../Images/full-star.svg" alt="" class="star">
+                    <span class="rating">5/5</span>
+                </span>
+                <span class="price-and-cart">
+                    <span class="price">$140</span>
+                    <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                </span>
+            </div>
+            <div data-category="shirts" class="item">
+                    <img src="../Images/justin shirt.jpg" alt="" class="img">
+                    <p class="item-detail-text">Justin Beiber Shirt</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">4/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$70</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+            </div>
+            <div data-category="beach wear" class="item">
+                    <img src="../Images/leaf-bikini-three-piece.jpg" alt="" class="img">
+                    <p class="item-detail-text">Three Piece Bikini Leaf Design</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <span class="rating">4.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$38</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+            </div>
+            <div data-category="beach wear" class="item">
+                    <img src="../Images/men's-beach-shorts.jpg" alt="" class="img">
+                    <p class="item-detail-text">Men's Beach Shorts</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <span class="rating">3/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$60</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+            </div>
+            <div data-category="beach wear" class="item">
+                    <img src="../Images/men's-summer-bottoned-down-shirt.jpg" alt="" class="img">
+                    <p class="item-detail-text">Men's Summer Buttoned Down Shirt</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">4/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$50</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+            </div>
+            <span data-category="beach wear" class="item">
+                    <img src="../Images/plain-bikini.jpg" alt="" class="img">
+                    <p class="item-detail-text">Plain Bikini</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <span class="rating">5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$50</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+            </span>
+            <span data-category="shirts" class="item">
+                    <img src="../Images/plain-buttoned-shirt.jpg" alt="" class="img">
+                    <p class="item-detail-text">Plain Buttoned Shirt</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">4/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$70</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+            </span>
+            <span data-category="perfumes" class="item">
+                    <img src="../Images/prada-perfume.jpg" alt="" class="img">
+                    <p class="item-detail-text">Prada Perfume</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <span class="rating">4/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$145</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+            </span>
+            <span data-category="beach wear" class="item">
+                    <img src="../Images/rose-beachwear.jpg" alt="" class="img">
+                    <p class="item-detail-text">Rose Beachwear</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">2.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$80</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>            
+                <span data-category="beach wear" class="item">
+                    <img src="../Images/short-beachdress.jpg" alt="" class="img">
+                    <p class="item-detail-text">Short Beach Dress</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">3/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$80</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="skirts" class="item">
+                    <img src="../Images/short-flowy-skirt.jpg" alt="" class="img">
+                    <p class="item-detail-text">Short Wavy Skirt</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">3/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$80</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="beach wear" class="item">
+                    <img src="../Images/summer-twopiece.jpg" alt="" class="img">
+                    <p class="item-detail-text">Two Piece Female Summer Outfit</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">3.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$110</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="beach wear" class="item">
+                    <img src="../Images/sunflower-bikini.jpg" alt="" class="img">
+                    <p class="item-detail-text">Sunflower Bikini</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <span class="rating">4.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$60</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="tops" class="item">
+                    <img src="../Images/tank-top.jpg" alt="" class="img">
+                    <p class="item-detail-text">Tank top</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <span class="rating">5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$80</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="beach wear" class="item">
+                    <img src="../Images/two-piece-men's-beachwear.jpg" alt="" class="img">
+                    <p class="item-detail-text">Two Piece Men's Beachwear</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">3.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$70</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="perfumes" class="item">
+                    <img src="../Images/versace-bright-crystal-perfume.jpg" alt="" class="img">
+                    <p class="item-detail-text">Versace Bright Crystal Perfume</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <span class="rating">5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$150</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="perfumes" class="item">
+                    <img src="../Images/versace-eau-frache.jpg" alt="" class="img">
+                    <p class="item-detail-text">Versace Eau De Frache Perfume</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <span class="rating">5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$170</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="jewelry" class="item">
+                    <img src="../Images/versace-glasses.jpg" alt="" class="img">
+                    <p class="item-detail-text">Versace Glasses</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">3/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$150</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="dresses" class="item">
+                    <img src="../Images/zara-full-corporate.jpg" alt="" class="img">
+                    <p class="item-detail-text">Zara Full Corporate Set</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <span class="rating">4.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$230</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="shoes" class="item">
+                    <img src="../Images/zara-short-heels.jpg" alt="" class="img">
+                    <p class="item-detail-text">Zara Short Heels</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">4/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$60</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="baby wear" class="item">
+                    <img src="../Images/comfy-babywear.jpg" alt="" class="img">
+                    <p class="item-detail-text">Comfy baby wear</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <span class="rating">4.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$65</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="shoes" class="item">
+                    <img src="https://res.cloudinary.com/dx8p7miis/image/upload/f_auto,q_auto/adidas-sambas_t7zk9h" alt="" class="img">
+                    <p class="item-detail-text">Adidas Sambas</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <span class="rating">4.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$200</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="jewelry" class="item">
+                    <img src="../Images/necklace.jpg" alt="" class="img">
+                    <p class="item-detail-text">Cute Necklace</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">3.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$90</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="jewelry" class="item">
+                    <img src="../Images/two-earring-necklace-set.jpg" alt="" class="img">
+                    <p class="item-detail-text">Two Earrings and a Necklace Set</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">3/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$102</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="skirts" class="item">
+                    <img src="../Images/simple-corporate-short-skirt-set.jpg" alt="" class="img">
+                    <p class="item-detail-text">Simple Corporate Skirt With Set</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">3/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$220</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>
+                <span data-category="tops" class="item">
+                    <img src="../Images/simple-tank-top.jpg" alt="" class="img">
+                    <p class="item-detail-text">Simple Small Tank Top</p>
+                    <span class="stars">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/full-star.svg" alt="" class="star">
+                        <img src="../Images/half-star.svg" alt="" class="star">
+                        <img src="../Images/empty-star.svg" alt="" class="star">
+                        <span class="rating">3.5/5</span>
+                    </span>
+                    <span class="price-and-cart">
+                        <span class="price">$80</span>
+                        <button class="add-to-cart-button"><img src="../Images/cart.svg" alt="" class="add-to-cart-img"></button>
+                    </span>
+                </span>   
+            </div>
+            </div>
+        </div>
+        <script src="../JavaScript Pages/products.js"></script>
+    </main>
+</body>
+</html>

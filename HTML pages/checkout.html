@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check out</title>
+    <link rel="stylesheet" href="../CSS pages/checkout.css">
+</head>
+<body>
+    <header>
+        <div>
+            <p class="up-text">Thank you for shopping with Lolia's Shopping Site!!!</p>
+            <div >
+                <a href="home.html" class="home">Home</a>
+                <span class="arrow"> > </span>
+                <a href="cart.html" class="cart">Cart</a>
+                <span class="arrow"> > </span>
+                <a href="checkout.html" class="checkout">Checkout</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="card" id="card">
+            <h1 class="enter-text">Enter card details</h1>
+            <p class="card-number">Card number: </p>
+            <input type="text" class="card-num-input" placeholder="Enter card number">
+            <p class="card-date">Card expiration date: </p>
+            <input type="text" class="card-date-input" placeholder="Enter expiration date">
+            <p class="card-code">Card security code: </p>
+            <input type="text" class="card-code-input" placeholder="Enter your three digit code.">
+        </div>
+        <div class="address-form" id="address-form">
+            <h2 class="checkout-text">Checkout</h2>
+
+            <!-- Address form -->
+            <div id="addressForm">
+            <label for="fullName" class="fullname-text">Full Name:</label>
+            <input type="text" id="fullName" placeholder="John Doe" class="fullname-input"><br><br>
+
+            <label for="street" class="street-text">Street:</label>
+            <input type="text" id="street" placeholder="123 Main St" class="street-input"><br><br>
+
+            <label for="city" class="city-text">City:</label>
+            <input type="text" id="city" placeholder="City" class="city-input"><br><br>
+
+            <label for="state" class="state-text">State:</label>
+            <input type="text" id="state" placeholder="State" class="state-input"><br><br>
+
+            <label for="zip" class="zip-text">ZIP Code:</label>
+            <input type="text" id="zip" placeholder="12345" class="zip-input"><br><br>
+
+            </div>
+        </div>
+
+        <div class="error"></div>
+        <div class="after-error"></div>
+
+        <div>
+            <a href="#" class="checkout-final">Proceed with checkout</a>
+        </div>
+    </main>
+    <script src="../JavaScript Pages/checkout.js"></script>
+</body>
+</html>

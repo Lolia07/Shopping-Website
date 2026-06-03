@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="../CSS pages/profile.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top-line">
+            <h4 class="signup-text">
+                <span class="middle-section">
+                    Sign up and get 20% off your first order. <a href="./sign-up.html" class="signup-link">Sign up now.</a>
+                </span> 
+                <button class="close-button">
+                x
+                </button>
+        </div>
+        <div class="after-line" >
+           <div class="star-shopping-line">
+            <span class="star-stopping"><h3 class="star-shopping-text"><a href="../HTML pages/home.html" class="shop-co-link">SHOP.CO</a></h3></span>
+             <span class="shop-dropdown">
+                    <label for="categories">
+                        <select id="categorySelect" onchange="filterCategory()">
+                        <option value="tops" class="tops-category" category = "tops"><a href="products.html">Tops</a></option>
+                        <option value="shoes" class="shoes-category" category = "shoes"><a href="products.html">Shoes</a></option>
+                        <option value="dresses" class="dresses-category"><a href="products.html">Dresses</a></option>
+                        <option value="jeans" class="jeans-category"><a href="products.html">Jeans</a></option>
+                        <option value="jewelry" class="jewelry-category"><a href="products.html">Jewelry</a></option>
+                        <option value="beach wear" class="beachwear-category"><a href="products.html">Beach wear</a></option>
+                        <option value="skirts" class="skirts-category"><a href="products.html">Skirts</a></option>
+                        <option value="perfumes" class="perfume-category"><a href="products.html">Perfumes</a></option>
+                        <option value="shirts" class="shirts-category"><a href="products.html">Shirts</a></option>
+                        </select>
+                    </label>
+                </span>
+                </span>
+                <span class="product-span"><a href="products.html" class="explore">Explore products</a></span>
+                <span class="new"><a href="products.html" class="new-link">New Arrivals</a></span>
+                <span class="brands">Brands</span>
+
+                <span class="right-top"><img src="../Images/search.svg" alt="" class="search-picture">
+                <input type="text" placeholder=" Search for products..." id="searchBar" class="searchbar">
+                </span>
+           </div>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <img src="../Images/hamburger-menu-svgrepo-com.svg" alt="" class="hamburger">
+        </button>
+    </header>
+    <main class="main">
+        <div class="top-left">
+            <a href="home.html" class="home-link">Home</a>
+            <span class="arrow"> > </span>
+            <a href="profile.html " class="profile-link">Profile</a>
+        </div>
+        <div class="main-stuff">
+            <div cart-span>
+            <a href="cart.html"><span class="cart-link-text"><img src="../Images/cart.svg" alt="" class="cart-link">Go to cart</span></a>
+            </div>
+            <div track-span>
+            <a href="track.html"><span class="track-link-text"><img src="../Images/track.svg" alt="" class="track-link">Track your order</span></a>
+            </div>
+        </div>
+        <div class="bottom-div">
+            <img src="../Images/versace-logo-1.svg" alt="" class="versace">
+            <img src="../Images/zara-logo-1.svg" alt="" class="zara">
+            <img src="../Images/gucci-logo-1.svg" alt="" class="gucci">
+            <img src="../Images/prada-logo-1.svg" alt="" class="prada">
+            <img src="../Images/calvin-klein-1.svg" alt="" class="calvin-klein">
+        </div>
+        <script src="../JavaScript Pages/profile.js"></script>
+    </main>
+</body>
+</html>
