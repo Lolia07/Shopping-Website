@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS pages/home.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="top-line">
+            <h4 class="signup-text">
+                <span class="middle-section">
+                    Sign up and get 20% off your first order. <a href="HTML pages/sign-up.html" class="signup-link">Sign up now.</a>
+                </span> 
+                <button class="close-button">
+                x
+                </button>
+            </h4>
+        </div>
+        <div class="star-shopping-line">
+            <span class="star-stopping"><h3 class="star-shopping-text"><a href="index.html" class="shop-co-link">SHOP.CO</a></h3></span>
+            <span class="shop-dropdown">
+                    <label for="categories">
+                        <select id="categorySelect" onchange="filterCategory()">
+                        <option value="all" class="shop">Shop</option>
+                        <option value="tops" class="tops-category" category = "tops"><a href="HTML pages/products.html">Tops</a></option>
+                        <option value="shoes" class="shoes-category" category = "shoes"><a href="HTML pages/products.html">Shoes</a></option>
+                        <option value="dresses" class="dresses-category"><a href="HTML pages/products.html">Dresses</a></option>
+                        <option value="jeans" class="jeans-category"><a href="HTML pages/products.html">Jeans</a></option>
+                        <option value="jewelry" class="jewelry-category"><a href="HTML pages/products.html">Jewelry</a></option>
+                        <option value="beach wear" class="beachwear-category"><a href="HTML pages/products.html">Beach wear</a></option>
+                        <option value="skirts" class="skirts-category"><a href="HTML pages/products.html">Skirts</a></option>
+                        <option value="perfumes" class="perfume-category"><a href="HTML pages/products.html">Perfumes</a></option>
+                        <option value="shirts" class="shirts-category"><a href="HTML pages/products.html">Shirts</a></option>
+                        </select>
+                    </label>
+                </span>
+                <span class="product-span"><a href="HTML pages/products.html" class="explore">Explore products</a></span>
+                <span class="new"><a href="HTML pages/products.html" class="new-link">New Arrivals</a></span>
+                <span class="brands"><a href="HTML pages/brands.html" class="brands-link">Brands</a></span>
+
+                <span class="right-top"><img src="../Images/search.svg" alt="" class="search-picture">
+                <input type="text" placeholder=" Search for products..." id="searchBar" class="searchbar">
+                </span>
+            <span class="two-links-top-right">
+                <a href="../HTML pages/cart.html"><img src="../Images/cart.svg" alt="" id="Cart" class="cart-img"></a>
+                <a href="HTML pages/profile.html"><img src="../Images/profile.svg" alt="" class="profile-img"></a>
+            </span>
+        </div>
+        <button class="hamburger" id="hamburger">
+            <img src="../Images/hamburger-menu-svgrepo-com.svg" alt="" class="hamburger">
+        </button>
+
+    </header>
+    <main class="main">
+        <div class="main-section">
+            <span class="left-side">
+            <h1 class="find-clothes">FIND CLOTHES THAT MATCH YOUR STYLE</h1>
+           <p class="subtext">
+                Browse through our diverse range of meticulously crafted garments, 
+                designed to bring out your individuality and cater to your sense of style.
+            </p>
+           <p><a href="HTML pages/products.html"><button class="shop-now" >Shop Now</button></a></p>
+           <div class="three-sections">
+            <span class="left-section">
+                <h2 class="200+">200+</h2>
+                <p class="International">International brands</p>
+            </span>
+             <span class="mid-section">
+                <h2 class="2,000+">2,000+</h2>
+                <p class="high-quality">High-Quality Products</p>
+            </span>
+             <span class="right-section">
+                <h2 class="30,000+">30,000+</h2>
+                <p class="happy">Happy customers</p>
+            </span>
+           </div>
+        </span>
+        <span class="star-img-span">
+            <img src="../Images/star-four.svg" alt="" class="four-star-img">
+        </span>
+        <div class="right-side"></div>
+        </div>
+        <div class="bottom-div">
+            <img src="../Images/versace-logo-1.svg" alt="" class="versace">
+            <img src="../Images/zara-logo-1.svg" alt="" class="zara">
+            <img src="../Images/gucci-logo-1.svg" alt="" class="gucci">
+            <img src="../Images/prada-logo-1.svg" alt="" class="prada">
+            <img src="../Images/calvin-klein-1.svg" alt="" class="calvin-klein">
+        </div>
+    </main>
+    <script src="../JavaScript Pages/home.js"></script>
+</body>
+</html>
